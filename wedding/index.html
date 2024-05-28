@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-animate.css">
+    <link rel="stylesheet" href="css/css-icomoon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Edu+TAS+Beginner:wght@400..700&family=Micro+5+Charted&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="splashscreen">
+        <div class="splashscreen-bg"></div>
+        <div class="tengah">
+            <p>The Wedding Of</p>
+            <h1>Mahmoud &amp; Kholoud </h1>
+            <a href="#" onclick="return OpenInvitation();">
+                <button class="btn-depan ">OPEN</button>
+            </a>
+        </div>
+    </div>
+    <div style="display: none;" id="page">
+        <div class="ww-nav-bar fixed-bottom bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container"><svg class="heart" viewBox="0 0 32 29.6">
+                        <path
+                            d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z">
+                        </path>
+                    </svg>
+                    <h1 class="h2 ">Waiting For You</h1>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#ww-navbarNav" aria-controls="ww-navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="navbar-collapse text-uppercase collapse" id="ww-navbarNav" style="">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#cover">Home</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#couple">Couple</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#events">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <header class="cover" id="cover">
+            <div class="overlay"></div>
+            <div class="col-md-6 offset-md-3 text-center">
+                <div class="main-title fadeIn animated-fast">
+                    <p>The Wedding Of</p>
+                    <h1>Mahmoud &amp; Kholoud </h1>
+                    <p><span>27 - 07 - 2024</span></p>
+                </div>
+            </div>
+        </header>
+        <div id="couple">
+            <div class="container text-center">
+                <div class="fadeInUp animated-fast quran">
+                    <h1 class="quran">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ </h1>
+                    <p>
+                        <bdi>﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+                            وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ
+                            يَتَفَكَّرُونَ ﴾</bdi>
+                    </p>
+                </div>
+                <div class="couple-wrap animate-box fadeInUp animated-fast">
+                    <div class="couple-half">
+                        <div class="groom"> <img src="images/mahmoud.jpg?nocache=1440">
+                        </div>
+                        <h3>
+                            Mahmoud AbdElaziz Negm
+                        </h3>
+                    </div>
+                    <span class="heart text-center"><i class="icon-heart2"></i></span>
+                    <div class="couple-half">
+                        <div class="bride"> <img src="images/kholoud.jpg">
+                        </div>
+                        <h3>
+                            Kholoud Samier Sadiq
+                        </h3>
+                    </div>
+
+                </div>
+                <p class="invite">Cordially Invite You To</p>
+            </div>
+        </div>
+        <div class="container text-center events mb-4 py-2" id="events">
+            <div class="border rounded-pill shadow px-4 mx-2 mb-4">
+                <div class="row justify-content-center" id="count-down">
+                    <div class="col-3 p-1">
+                        <h2 class=" m-0 p-0" id="day">0</h2><small class="ms-1 me-0 my-0 p-0 ">Days</small>
+                    </div>
+                    <div class="col-3 p-1">
+                        <h2 class=" m-0 p-0" id="hour">0</h2><small class="ms-1 me-0 my-0 p-0 ">Hours</small>
+                    </div>
+                    <div class="col-3 p-1">
+                        <h2 class="  m-0 p-0" id="minute">0</h2><small class="ms-1 me-0 my-0 p-0  ">Minutes</small>
+                    </div>
+                    <div class="col-3 p-1">
+                        <h2 class="  m-0 p-0" id="second">0</h2><small class="ms-1 me-0 my-0 p-0  ">Seconds</small>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event my-4 mx-2">
+                    <h1 class="h3">Marriage contract</h1>
+                    <p>8:00 pm<br>
+                    Home of Mr. Samir Sadiq Saeed</p>
+                    <a href="https://maps.app.goo.gl/gyvKpQo2GA4MPL8U6" target="_blank"
+                        class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>Go to Google Maps
+                    </a>
+                </div>
+                <div class="event my-4 mx-2">
+                    <h1 class="h3">Henna</h1>
+                    <p>10:00 pm<br>
+                    Haras Al Houdoud St El Gabal El Asfar</p>
+                    <a href="https://maps.app.goo.gl/A5uzHvSe3wJpxrCL9" target="_blank"
+                    class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
+                    <i class="fa-solid fa-map-location-dot me-2"></i>Go to Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center events container mb-4 py-2">
+            <div class="border rounded-pill shadow px-4 mx-2 mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-3 p-1">
+                        <h2 class=" m-0 p-0" id="day2">0</h2><small class="ms-1 me-0 my-0 p-0 ">Days</small>
+                    </div>
+                    <div class="col-3 p-1">
+                        <h2 class=" m-0 p-0" id="hour2">0</h2><small class="ms-1 me-0 my-0 p-0 ">Hours</small>
+                    </div>
+                    <div class="col-3 p-1">
+                        <h2 class="  m-0 p-0" id="minute2">0</h2><small class="ms-1 me-0 my-0 p-0  ">Minutes</small>
+                    </div>
+                    <div class="col-3 p-1">
+                        <h2 class="  m-0 p-0" id="second2">0</h2><small class="ms-1 me-0 my-0 p-0  ">Seconds</small>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event my-4 mx-2">
+                    <h1 class="h3">Wedding</h1>
+                    <p>8:00 pm<br>
+                    Gardenia Wedding Hall , Hadiq El Qopa</p>
+                    <a href="https://maps.app.goo.gl/bfM5HMSUeTcAbZ8M7" target="_blank"
+                        class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>Go to Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="js/jquery.min.js?ver=1.1.0"></script>
+    <script src="js/bootstrap.bundle.min.js?ver=1.1.0"></script>
+</body>
+
+</html>
