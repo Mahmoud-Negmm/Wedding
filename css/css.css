@@ -6,12 +6,6 @@
     color: #fff;
     background: #000;
 }
-
-@font-face {
-    font-family: 'Sevillana';
-    src: url('../fonts/Sevillana-Regular.ttf');
-}
-
 @font-face {
     font-family: 'Edu TAS Beginner';
     src: url('../fonts/EduTASBeginner-VariableFont_wght.ttf');
