@@ -23,7 +23,7 @@ function updateCountdown() {
 // تشغيل الدالة لأول مرة
 updateCountdown();
 
-const eventDate2 = new Date('2024-07-27T20:00:00');
+const eventDate2 = new Date('2024-07-27T19:00:00');
 
 function updateCountdown2() {
     const currentDate = new Date();
