@@ -1,0 +1,299 @@
+* {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+@font-face {
+    font-family: 'Sevillana';
+    src: url('../fonts/Sevillana-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Edu TAS Beginner';
+    src: url('../fonts/EduTASBeginner-VariableFont_wght.ttf');
+}
+/* Nav Bar Style */
+.ww-nav-bar .heart {
+    fill: #f26147;
+    position: relative;
+    top: -4px;
+    width: 40px;
+    -webkit-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ww-nav-bar .nav-item {
+    font-size: 18px;
+    padding: 5px 0 5px 16px;
+    font-weight: 500;
+}
+
+#splashscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #053742;
+
+}
+
+.splashscreen-bg {
+
+    /* The image used */
+    background-image: url("../images/img1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    -webkit-filter: blur(4px);
+}
+
+h1 {
+    font-size: 55px;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0 !important;
+}
+
+.tengah {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.btn-depan {
+    border: none;
+    margin: 15px 30px;
+    letter-spacing: 1px;
+    position: relative;
+    background: #34495e;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 15px 15px 55px;
+}
+
+/* Pseudo elements for icons */
+.btn-depan:before {
+    content: "\f0e0";
+    font-family: 'FontAwesome';
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 95%;
+    width: 45px;
+    border-radius: 10px 0px 0px 10px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.btn-depan:hover {
+    background: #2c3e50;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    /* The image used */
+    background-image: url("../images/img1.jpg");
+    /* Center and scale the image nicely */
+    /* background-attachment: fixed; */
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cover .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(5, 55, 66, 1) 0%, rgba(5, 55, 66, 0) 100%);
+}
+
+.cover .main-title {
+    padding: 50% 0;
+    color: #fff;
+}
+
+p {
+    margin: 40px 0 20px 0;
+    font-size: 25px;
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#couple {
+    padding: 7em 0;
+}
+
+.quran {
+    font-family: 'Amiri Quran', serif;
+    color: #304058;
+    font-size: 50px;
+}
+.quran+p {
+    font-family: 'Amiri Quran', serif;
+    color: #304058;
+    font-size: 35px;
+}
+
+.heart {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  animation: pulse 1s ease infinite;
+}
+
+.heart i {
+  font-size: 20px;
+  background: #fff;
+  padding: 20px;
+  color:#304058;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .heart {
+    display: none;
+  }
+}
+
+.couple-half {
+  width: 50%;
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  .couple-half {
+    width: 100%;
+  }
+}
+
+.couple-half h3 {
+  font-family: 'Edu TAS Beginner';
+  color:#304058;
+  font-size: 30px;
+  margin-top: 6%;
+  font-weight: bold;
+}
+
+
+.couple-half .groom img,
+.couple-half .bride img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+
+  .couple-half .groom,
+  .couple-half .bride {
+    width: 100%;
+    height: 140px;
+  }
+
+  .couple-half .groom img,
+  .couple-half .bride img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+
+.couple-half .groom {
+  float: right;
+  margin-right: 5px;
+}
+
+.couple-half .bride {
+  float: left;
+  margin-left: 5px;
+}
+@media screen and (max-width: 480px) {
+
+  .couple-half .groom,
+  .couple-half .bride {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.couple-wrap {
+  width: 90%;
+  margin: 50px auto;
+  position: relative;
+}
+.invite {
+  font-family: 'Edu TAS Beginner';
+  font-size: 35px;
+  position: relative;
+  margin: auto;
+}
+.event {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 25px;
+}
+.events {
+  background: rgba(5, 55, 66, 0.8);
+  border-radius: 25px;
+  color: white;
+}
