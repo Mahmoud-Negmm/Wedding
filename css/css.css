@@ -1,14 +1,31 @@
 * {
     scroll-behavior: smooth;
 }
+body {
+  /* قم بإخفاء المحتوى حتى يتم تحميل الخطوط بالكامل */
+  visibility: hidden;
+}
+
+/* استخدم الكلاس الذي تم إضافته بواسطة JavaScript لعرض المحتوى بعد تحميل الخطوط */
+body.fonts-loaded {
+  visibility: visible;
+}
 
 ::selection {
     color: #fff;
     background: #000;
 }
+
+@font-face {
+    font-family: 'Sevillana';
+    src: url('../fonts/Sevillana-Regular.ttf');
+    font-display: block;
+}
+
 @font-face {
     font-family: 'Edu TAS Beginner';
     src: url('../fonts/EduTASBeginner-VariableFont_wght.ttf');
+    font-display: block;
 }
 /* Nav Bar Style */
 .ww-nav-bar .heart {
