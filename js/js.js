@@ -5,7 +5,7 @@ function OpenInvitation() {
     splashscreen.style.display = "none"
     page.style.display = "block"
 }
-const eventDate = new Date('2024-07-25T08:00:00');
+const eventDate = new Date('2024-07-25T19:00:00');
 
 function updateCountdown() {
     const currentDate = new Date();
@@ -23,7 +23,7 @@ function updateCountdown() {
 // تشغيل الدالة لأول مرة
 updateCountdown();
 
-const eventDate2 = new Date('2024-07-27T08:00:00');
+const eventDate2 = new Date('2024-07-27T20:00:00');
 
 function updateCountdown2() {
     const currentDate = new Date();
