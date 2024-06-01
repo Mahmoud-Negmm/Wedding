@@ -40,3 +40,22 @@ function updateCountdown2() {
 
 // تشغيل الدالة لأول مرة
 updateCountdown2();
+
+function mute() {
+    let audio = document.getElementById('audio');
+    let button = document.getElementById('mute');
+    let isMute = +localStorage.getItem('mute');
+    if (!isMute) {
+        audio.muted = true;
+        audio.pause()
+        button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
+        localStorage.setItem('mute', 1);
+    } else {
+        audio.muted = false;
+        audio.volume = 0.9;
+        audio.play()
+        button.innerHTML = '<i color="#fff" class="fa fa-volume-up my-float"></i>';
+        localStorage.setItem('mute', 0);
+
+    }
+}
