@@ -385,6 +385,7 @@ p {
 
 .my-float {
 	margin-top: 10px;
+  margin-right: 0;
 }
 
 .floatmute:hover {
