@@ -386,3 +386,8 @@ p {
 .my-float {
 	margin-top: 10px;
 }
+
+.floatmute:hover {
+  color: rgba(5, 55, 66, 0.8);
+  background-color: #FFF;
+}

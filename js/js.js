@@ -48,13 +48,13 @@ function mute() {
     if (!isMute) {
         audio.muted = true;
         audio.pause()
-        button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
+        button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"><br><br> click here to play song </i>';
         localStorage.setItem('mute', 1);
     } else {
         audio.muted = false;
         audio.volume = 0.9;
         audio.play()
-        button.innerHTML = '<i color="#fff" class="fa fa-volume-up my-float"></i>';
+        button.innerHTML = '<i color="#fff" class="fa fa-volume-up my-float"><br><br> Enjoy </i>';
         localStorage.setItem('mute', 0);
 
     }
