@@ -415,7 +415,7 @@ p {
   --color2: khaki;
   --color3: white;
   --color4: lime;
-  --color5: gold;
+  --color5: green;
   --color6: mediumseagreen;
   --y: -30vmin;
   --x: -50%;
@@ -505,34 +505,29 @@ p {
 .firework:nth-child(2),
 .firework:nth-child(2)::before,
 .firework:nth-child(2)::after {
-  --color1: #530127;
+  --color1: gold;
   --color2: #CE2029;
   --color3: red;
   --color4: #db5f4d;
   --color5: #FF664B;
-  --color6: lavender;  
-  --finalSize: 40vmin;
-  left: 10%;
+  --color6: white;  
+  --finalSize: 45vmin;
+  left: 25%;
   top: 30%;
   animation-delay: -0.25s;
-}
-
-.firework:nth-child(3) {
-  --x: -30vmin;
-  --y: -50vmin;
 }
 
 .firework:nth-child(3),
 .firework:nth-child(3)::before,
 .firework:nth-child(3)::after {
-  --color1: cyan;
+  --color1: gold;
   --color2: lightcyan;
   --color3: lightblue;
   --color4: PaleTurquoise;
   --color5: SkyBlue;
   --color6: lavender;
   --finalSize: 35vmin;
-  left: 80%;
-  top: 40%;
+  left: 65%;
+  top: 30%;
   animation-delay: -0.4s;
 }
