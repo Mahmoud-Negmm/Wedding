@@ -3,7 +3,7 @@ const page = document.getElementById("page");
 
 function OpenInvitation() {
   splashscreen.style.display = "none";
-  page.style.display = "block";
+  page.style.display = "grid";
 }
 const eventDate = new Date("2024-07-25T19:00:00");
 
